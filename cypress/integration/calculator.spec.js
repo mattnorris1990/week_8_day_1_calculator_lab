@@ -29,7 +29,7 @@ describe("Calculator", () => {
 
   it('does the add operator update the display with the result of the operation', () => {
     cy.get('#number6').click();
-    cy.get('#operator-add').click();
+    cy.get('#operator_add').click();
     cy.get('#number2').click();
     cy.get('#operator-equals').click()
     cy.get('.display').should('contain', '8')
